@@ -1,0 +1,31 @@
+{
+    "name": "laraviet/product-property-module",
+    "description": "",
+    "authors": [
+        {
+            "name": "Laraviet",
+            "email": "thanhcttsp@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "laraviet/core-module": "dev-master",
+        "laraviet/product-module": "dev-master"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\ProductProperty\\Providers\\ProductPropertyServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\ProductProperty\\": ""
+        }
+    },
+    "type": "laravel-module"
+}
