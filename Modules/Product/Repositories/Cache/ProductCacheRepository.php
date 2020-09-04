@@ -22,4 +22,9 @@ class ProductCacheRepository extends BaseCacheRepository implements ProductRepos
         $this->cache = $cache;
         parent::__construct($productRepository);
     }
+
+    public function test()
+    {
+        dd(123);
+    }
 }

@@ -22,8 +22,10 @@
         "laravel/tinker": "^2.0",
         "laraviet/admin-home-module": "dev-master",
         "laraviet/core-module": "dev-master",
+        "laraviet/product-module": "dev-master",
         "nwidart/laravel-modules": "^7.1",
-        "spatie/laravel-medialibrary": "^7.19"
+        "spatie/laravel-medialibrary": "^7.19",
+        "ext-json": "*"
     },
     "require-dev": {
         "facade/ignition": "^2.0",

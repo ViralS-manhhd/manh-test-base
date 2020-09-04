@@ -19,7 +19,7 @@
 
                     @include('common-components.forms.alert-error')
 
-                    {!! Form::open(['route' => 'product-properties.store','method'=>'POST', 'class' => 'outer-repeater', 'enctype' => 'multipart/form-data']) !!}
+                    {!! Form::open(['route' => 'product-properties.store','method'=>'POST', 'class' => 'outer-repeater', 'enctype' => 'multipart/form-data', 'id' => 'property-form']) !!}
                     <div data-repeater-list="outer-group" class="outer">
                         @include('productproperty::product-properties._form')
                     </div>
@@ -37,3 +37,24 @@
     <!-- end row -->
 
 @endsection
+@section('script')
+    @include('common-components.functions.validate')
+    <script>
+      validate('#property-form', {
+        'property-input-name': {
+          required: true,
+        },
+        'group-price': {
+          required: true,
+        },
+        'group-sku': {
+          required: true,
+        },
+        'group-input-name': {
+          required: true,
+        }
+      })
+    </script>
+@endsection
+
+

@@ -63,8 +63,9 @@ class ProductPropertyController extends Controller
      * @return Response
      * @throws RepositoryException
      */
-    public function store(CreateProductPropertyRequest $request)
+    public function store(Request $request)
     {
+        dd($request->all());
         $this->removeIfZero($request, "product_id");
         $this->productPropertyRepository->create($request->except('_token'));
 

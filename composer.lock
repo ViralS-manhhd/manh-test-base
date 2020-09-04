@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3d664da9410b0da53282702c8d535a84",
+    "content-hash": "68e3e06e88a0ec490f193f69d61a164a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1984,7 +1984,7 @@
                     "email": "thanhcttsp@gmail.com"
                 }
             ],
-            "time": "2020-07-20T03:14:36+00:00"
+            "time": "2020-08-06T09:47:16+00:00"
         },
         {
             "name": "laraviet/core-module",
@@ -2033,7 +2033,50 @@
                     "email": "thanhcttsp@gmail.com"
                 }
             ],
-            "time": "2020-07-23T10:48:51+00:00"
+            "time": "2020-08-06T10:09:27+00:00"
+        },
+        {
+            "name": "laraviet/product-module",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laraviet/product-module.git",
+                "reference": "2f8bcb414975d7c764ab32bff058010d50310a4c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laraviet/product-module/zipball/2f8bcb414975d7c764ab32bff058010d50310a4c",
+                "reference": "2f8bcb414975d7c764ab32bff058010d50310a4c",
+                "shasum": ""
+            },
+            "require": {
+                "laraviet/core-module": "dev-master"
+            },
+            "type": "laravel-module",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Modules\\Product\\Providers\\ProductServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Modules\\Product\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Laraviet",
+                    "email": "thanhcttsp@gmail.com"
+                }
+            ],
+            "time": "2020-08-06T10:20:57+00:00"
         },
         {
             "name": "league/commonmark",
@@ -2972,12 +3015,12 @@
             "version": "v1.1.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/nrk/predis.git",
+                "url": "https://github.com/predis/predis.git",
                 "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "url": "https://api.github.com/repos/predis/predis/zipball/f0210e38881631afeafb56ab43405a92cafd9fd1",
                 "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1",
                 "shasum": ""
             },
@@ -7346,6 +7389,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2019-09-17T06:23:10+00:00"
         },
         {
@@ -8225,7 +8269,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "laraviet/admin-home-module": 20,
-        "laraviet/core-module": 20
+        "laraviet/core-module": 20,
+        "laraviet/product-module": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

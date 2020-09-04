@@ -42,6 +42,11 @@
                                     <a href="{{ route('report.index') }}"
                                        class="dropdown-item">{{ _t('report') }}</a>
                                 @endif
+
+                                @if(Module::find('productproperty') && Module::find('productproperty')->isEnabled())
+                                    <a href="{{ route('product-properties.index') }}"
+                                       class="dropdown-item">{{ _t('pro_pro') }}</a>
+                                @endif
                             </div>
                         </li>
                     @endif
@@ -89,7 +94,6 @@
                             </li>
                         @endif
                     @endif
-
                 </ul>
             </div>
         </nav>
